@@ -1,0 +1,99 @@
+#products {
+  width: 100%;
+  .grid-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 10rem;
+    h2 {
+      text-align: center;
+      font-size: $h2;
+      padding-top: 2.3rem;
+    }
+    .marketplace,
+    .lending,
+    .game-guild,
+    .launchpad,
+    .bridge {
+      min-height: 40vh;
+      display: flex;
+      margin: 0 auto;
+    }
+    .marketplace {
+      .img {
+        background-image: url(../assets/images/images/NFT_marketplace.png);
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+      }
+      .description {
+        text-align: center;
+        font-size: $p;
+        width: 100%;
+        font-family: "robotoblack_italic";
+      }
+    }
+    .lending {
+      .img {
+        background-image: url(../assets/images/images/lending.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        order: 2;
+      }
+      .description {
+        text-align: center;
+        font-size: $p;
+        width: 100%;
+        font-family: "robotoblack_italic";
+      }
+    }
+    .game-guild {
+      .img {
+        background-image: url(../assets/images/images/Guild.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+      }
+      .description {
+        text-align: center;
+        font-size: $p;
+        width: 100%;
+        font-family: "robotoblack_italic";
+      }
+    }
+    .launchpad {
+      .img {
+        background-image: url(../assets/images/images/launchpad.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        order: 2;
+      }
+      .description {
+        text-align: center;
+        font-size: $p;
+        width: 100%;
+        font-family: "robotoblack_italic";
+      }
+    }
+    .bridge {
+      .img {
+        background-image: url(../assets/images/images/bgtriaL.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+      }
+      .description {
+        text-align: center;
+        font-size: $p;
+        width: 100%;
+        font-family: "robotoblack_italic";
+      }
+    }
+  }
+}

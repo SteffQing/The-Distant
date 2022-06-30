@@ -1,0 +1,496 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "robotoblack";
+  src: url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoblack_italic";
+  src: url("../fonts/roboto-blackitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotobold";
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"), url("../fonts/roboto-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotobold_italic";
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"), url("../fonts/roboto-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoitalic";
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"), url("../fonts/roboto-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotolight";
+  src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotolight_italic";
+  src: url("../fonts/roboto-lightitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotomedium";
+  src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotomedium_italic";
+  src: url("../fonts/roboto-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotothin";
+  src: url("../fonts/roboto-thin-webfont.woff2") format("woff2"), url("../fonts/roboto-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotothin_italic";
+  src: url("../fonts/roboto-thinitalic-webfont.woff2") format("woff2"), url("../fonts/roboto-thinitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e174b7;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #4dd5eb;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #eca355;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+  grid-column-gap: 10%;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+nav span {
+  background-image: url(../assets/images/DISTANT2.png);
+  background-position: center center;
+  background-size: cover;
+  width: 13em;
+  max-width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 330px) {
+  nav span {
+    width: 100%;
+  }
+}
+
+@media (min-width: 720px) {
+  nav span {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav span {
+    margin-left: 1em;
+  }
+}
+
+nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3%;
+  grid-row-gap: 0%;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.36);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  padding: 0 5em;
+  border-bottom-left-radius: 5px;
+}
+
+nav li {
+  list-style: none;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  font-family: "robotoregular";
+  color: #e174b7;
+}
+
+nav li a:link {
+  color: #e174b7;
+}
+
+main {
+  background-image: url("../assets/svg/black.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+main header {
+  margin: 0 3%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 100%;
+  color: white;
+  padding-top: 10%;
+}
+
+@media (min-width: 720px) {
+  main header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100vh;
+  }
+  main header .hero {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+  }
+  main header .hero .hero-content {
+    max-width: 75%;
+    position: relative;
+    top: 25%;
+  }
+  main header .hero_image {
+    width: 60%;
+    max-width: 70%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+main header .hero {
+  width: 90%;
+  min-width: 45ch;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+main header .hero h1 {
+  font-size: clamp(3rem, 3vw, 5rem);
+  font-family: "robotobold";
+  line-height: 1.3;
+}
+
+main header .hero h2 {
+  font-size: clamp(2em, 2.5vw, 4em);
+  line-height: 1.5;
+  font-family: "robotobold";
+}
+
+main header .hero p {
+  font-size: clamp(1.5rem, 1.7vw, 2rem);
+  color: #eca355;
+  font-family: "robotoregular";
+  line-height: 1.32;
+}
+
+main header .hero button {
+  background-color: #eca355;
+  color: #000;
+  margin: 1em 0;
+  border-radius: 7px;
+  padding: 0.4em 2em;
+  font-size: clamp(1.5rem, 1.7vw, 2rem);
+  font-family: "robotoblack";
+}
+
+main header .hero_image {
+  background-color: transparent;
+  max-width: 100%;
+  height: 40rem;
+  max-height: 60%;
+  background-image: url(../assets/images/NFT_Network_aob02g_c_scale_w_667.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 360px) {
+  main header .hero_image {
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 520px) {
+  main header .hero_image {
+    background-image: url(../assets/images/NFT_Network_aob02g_c_scale_w_477.png);
+  }
+}
+
+@media (min-width: 720px) {
+  main header .hero_image {
+    background-image: url(../assets/images/NFT_Network_aob02g_c_scale_w_904.png);
+  }
+}
+
+article {
+  background-color: #dde5ec;
+  color: black;
+}
+
+article aside {
+  margin: 0 3%;
+  text-align: center;
+  max-width: 100%;
+}
+
+article aside h2 {
+  font-size: clamp(2em, 2.5vw, 4em);
+  padding: 4% 0 2% 0;
+}
+
+article aside p {
+  margin: 0.4rem auto;
+  font-size: clamp(1.5rem, 1.7vw, 2rem);
+  max-width: 90%;
+  margin-bottom: 12%;
+}
+
+article aside #about-image {
+  background-image: url(../assets/images/mobile-distant.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 15em;
+  min-height: 20em;
+}
+
+@media (min-width: 360px) {
+  article aside #about-image {
+    margin-top: -3%;
+  }
+}
+
+@media (min-width: 480px) {
+  article aside #about-image {
+    height: 25em;
+    min-height: 31em;
+    margin-top: -5%;
+  }
+}
+
+@media (min-width: 720px) {
+  article aside #about-image {
+    background-image: url(../assets/images/tablet-distant.png);
+    margin-top: -10%;
+  }
+}
+
+@media (min-width: 1025px) {
+  article aside #about-image {
+    background-image: url(../assets/images/pc-version.png);
+  }
+}
+
+@media (min-width: 1600px) {
+  article aside #about-image {
+    background-image: url(../assets/images/pc-distant.png);
+  }
+}
+
+#products {
+  width: 100%;
+}
+
+#products .grid-content {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 2%;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10rem;
+}
+
+#products .grid-content h2 {
+  text-align: center;
+  font-size: clamp(2em, 2.5vw, 4em);
+  padding-top: 2.3rem;
+}
+
+#products .grid-content .marketplace,
+#products .grid-content .lending,
+#products .grid-content .game-guild,
+#products .grid-content .launchpad,
+#products .grid-content .bridge {
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#products .grid-content .marketplace .img {
+  background-image: url(../assets/images/images/NFT_marketplace.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .marketplace .description {
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  width: 100%;
+  font-family: "robotoblack_italic";
+}
+
+#products .grid-content .lending .img {
+  background-image: url(../assets/images/images/lending.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#products .grid-content .lending .description {
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  width: 100%;
+  font-family: "robotoblack_italic";
+}
+
+#products .grid-content .game-guild .img {
+  background-image: url(../assets/images/images/Guild.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .game-guild .description {
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  width: 100%;
+  font-family: "robotoblack_italic";
+}
+
+#products .grid-content .launchpad .img {
+  background-image: url(../assets/images/images/launchpad.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#products .grid-content .launchpad .description {
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  width: 100%;
+  font-family: "robotoblack_italic";
+}
+
+#products .grid-content .bridge .img {
+  background-image: url(../assets/images/images/bgtriaL.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .bridge .description {
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  width: 100%;
+  font-family: "robotoblack_italic";
+}
+
+#token {
+  background-color: black;
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#token .token_utilities {
+  background-image: url(../assets/images/the-void.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
