@@ -201,7 +201,6 @@ main header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 100vh;
   }
   main header .hero {
     -webkit-box-ordinal-group: 2;
@@ -635,7 +634,7 @@ article aside #about-image {
 }
 
 #products .grid-content .bridge {
-  background-image: url("../assets/images/bridge-bg.png");
+  background-image: url("../assets/images/bridge-bg2.png");
   background-position: center center;
   background-size: cover;
   width: 100%;
