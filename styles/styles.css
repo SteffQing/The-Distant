@@ -356,6 +356,13 @@ article aside #about-image {
 
 #products {
   width: 100%;
+  background-color: aqua;
+}
+
+@media (max-width: 340px) {
+  #products {
+    width: 90%;
+  }
 }
 
 #products h2 {
@@ -396,7 +403,7 @@ article aside #about-image {
 }
 
 #products .grid-content .marketplace {
-  background-image: url(../assets/images/nft-marketplace-bg.jpeg);
+  background-image: url("../assets/images/nft-marketplace-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -410,7 +417,7 @@ article aside #about-image {
 }
 
 #products .grid-content .marketplace .img {
-  background-image: url(../assets/images/NFT_marketplace-new-copy.png);
+  background-image: url("../assets/images/NFT_marketplace-new-copy.png");
   background-position: center center;
   background-size: contain;
   width: 100%;
@@ -432,7 +439,7 @@ article aside #about-image {
 }
 
 #products .grid-content .lending {
-  background-image: url(../assets/images/lending-bg.jpeg);
+  background-image: url("../assets/images/lending-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -446,7 +453,7 @@ article aside #about-image {
 }
 
 #products .grid-content .lending .img {
-  background-image: url(../assets/images/lending.png);
+  background-image: url("../assets/images/lending.png");
   background-position: center center;
   background-size: contain;
   width: 100%;
@@ -468,7 +475,7 @@ article aside #about-image {
 }
 
 #products .grid-content .game-guild {
-  background-image: url(../assets/images/game-guild-bg.jpg);
+  background-image: url("../assets/images/game-guild-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -482,7 +489,7 @@ article aside #about-image {
 }
 
 #products .grid-content .game-guild .img {
-  background-image: url(../assets/images/game-guild.png);
+  background-image: url("../assets/images/game-guild.png");
   background-position: center center;
   background-size: contain;
   width: 100%;
@@ -504,7 +511,7 @@ article aside #about-image {
 }
 
 #products .grid-content .launchpad {
-  background-image: url(../assets/images/launchpad-bg.jpeg);
+  background-image: url("../assets/images/launchpad-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -518,7 +525,7 @@ article aside #about-image {
 }
 
 #products .grid-content .launchpad .img {
-  background-image: url(../assets/images/launchpad.png);
+  background-image: url("../assets/images/launchpad.png");
   background-position: center center;
   background-size: contain;
   width: 100%;
@@ -540,7 +547,7 @@ article aside #about-image {
 }
 
 #products .grid-content .bridge {
-  background-image: url(../assets/images/bridge-bg.png);
+  background-image: url("../assets/images/bridge-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -554,7 +561,7 @@ article aside #about-image {
 }
 
 #products .grid-content .bridge .img {
-  background-image: url(../assets/images/bridge.png);
+  background-image: url("../assets/images/bridge.png");
   background-position: center center;
   background-size: contain;
   width: 100%;
