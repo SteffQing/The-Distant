@@ -137,20 +137,9 @@ nav span {
   margin: 0 auto;
 }
 
-@media (min-width: 330px) {
-  nav span {
-    width: 100%;
-  }
-}
-
 @media (min-width: 720px) {
   nav span {
     width: 50%;
-  }
-}
-
-@media (min-width: 1000px) {
-  nav span {
     margin-left: 1em;
   }
 }
@@ -223,6 +212,7 @@ main header {
   main header .hero .hero-content {
     max-width: 75%;
     position: relative;
+    text-align: left;
     top: 25%;
   }
   main header .hero_image {
@@ -239,6 +229,7 @@ main header .hero {
   min-width: 45ch;
   margin: 0 auto;
   padding: 1em 0;
+  text-align: center;
 }
 
 main header .hero h1 {
@@ -305,7 +296,6 @@ article {
 }
 
 article aside {
-  margin: 0 3%;
   text-align: center;
   max-width: 100%;
 }
@@ -352,7 +342,7 @@ article aside #about-image {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1300px) {
   article aside #about-image {
     background-image: url(../assets/images/pc-version.png);
   }
@@ -368,6 +358,12 @@ article aside #about-image {
   width: 100%;
 }
 
+#products h2 {
+  text-align: center;
+  font-size: clamp(2em, 2.5vw, 4em);
+  padding: 1.3rem;
+}
+
 #products .grid-content {
   position: relative;
   display: -ms-grid;
@@ -376,18 +372,9 @@ article aside #about-image {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-row-gap: 2%;
+  grid-row-gap: 0.3%;
   justify-items: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 10rem;
-}
-
-#products .grid-content h2 {
-  text-align: center;
-  font-size: clamp(2em, 2.5vw, 4em);
-  padding-top: 2.3rem;
+  margin: 1%;
 }
 
 #products .grid-content .marketplace,
@@ -395,83 +382,193 @@ article aside #about-image {
 #products .grid-content .game-guild,
 #products .grid-content .launchpad,
 #products .grid-content .bridge {
-  min-height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  border: 2px solid orange;
+  padding: 1.5em;
+  line-height: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+#products .grid-content .marketplace {
+  background-image: url(../assets/images/nft-marketplace-bg.jpeg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .marketplace h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: orange;
+  font-family: "robotoblack";
 }
 
 #products .grid-content .marketplace .img {
-  background-image: url(../assets/images/images/NFT_marketplace.png);
+  background-image: url(../assets/images/NFT_marketplace-new-copy.png);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background-repeat: no-repeat;
+  padding: 15em;
 }
 
 #products .grid-content .marketplace .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
   font-family: "robotoblack_italic";
+}
+
+#products .grid-content .lending {
+  background-image: url(../assets/images/lending-bg.jpeg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .lending h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: orange;
+  font-family: "robotoblack";
 }
 
 #products .grid-content .lending .img {
-  background-image: url(../assets/images/images/lending.jpg);
+  background-image: url(../assets/images/lending.png);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  background-repeat: no-repeat;
+  padding: 15em;
 }
 
 #products .grid-content .lending .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
   font-family: "robotoblack_italic";
+}
+
+#products .grid-content .game-guild {
+  background-image: url(../assets/images/game-guild-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .game-guild h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: orange;
+  font-family: "robotoblack";
 }
 
 #products .grid-content .game-guild .img {
-  background-image: url(../assets/images/images/Guild.jpg);
+  background-image: url(../assets/images/game-guild.png);
   background-position: center center;
-  background-size: cover;
-  width: 100%;
-}
-
-#products .grid-content .game-guild .description {
-  text-align: center;
-  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
-  width: 100%;
-  font-family: "robotoblack_italic";
-}
-
-#products .grid-content .launchpad .img {
-  background-image: url(../assets/images/images/launchpad.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  background-repeat: no-repeat;
+  padding: 15em;
 }
 
-#products .grid-content .launchpad .description {
+#products .grid-content .game-guild .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
   font-family: "robotoblack_italic";
 }
 
-#products .grid-content .bridge .img {
-  background-image: url(../assets/images/images/bgtriaL.jpg);
+#products .grid-content .launchpad {
+  background-image: url(../assets/images/launchpad-bg.jpeg);
   background-position: center center;
   background-size: cover;
   width: 100%;
 }
 
+#products .grid-content .launchpad h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: orange;
+  font-family: "robotoblack";
+}
+
+#products .grid-content .launchpad .img {
+  background-image: url(../assets/images/launchpad.png);
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background-repeat: no-repeat;
+  padding: 15em;
+}
+
+#products .grid-content .launchpad .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: center;
+  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  width: 100%;
+  font-family: "robotoblack_italic";
+}
+
+#products .grid-content .bridge {
+  background-image: url(../assets/images/bridge-bg.png);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+#products .grid-content .bridge h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: orange;
+  font-family: "robotoblack";
+}
+
+#products .grid-content .bridge .img {
+  background-image: url(../assets/images/bridge.png);
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background-repeat: no-repeat;
+  padding: 15em;
+}
+
 #products .grid-content .bridge .description {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
@@ -480,7 +577,7 @@ article aside #about-image {
 
 #token {
   background-color: black;
-  min-height: 40vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,9 +585,72 @@ article aside #about-image {
 }
 
 #token .token_utilities {
-  background-image: url(../assets/images/the-void.png);
+  background-image: url(../assets/images/void-utility.png);
   background-position: center center;
   background-size: cover;
   width: 100%;
+  margin: 5% auto;
+}
+
+@media (min-width: 300px) {
+  #token {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 360px) {
+  #token {
+    height: 85vh;
+  }
+}
+
+@media (min-width: 420px) {
+  #token {
+    height: 75vh;
+  }
+  #token .token_utilities {
+    background-image: url(../assets/images/void-token-vw.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    margin: 0% auto;
+  }
+}
+
+@media (min-width: 530px) {
+  #token {
+    height: 65vh;
+  }
+}
+
+@media (min-width: 680px) {
+  #token {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 720px) {
+  #token {
+    height: 50vh;
+  }
+  #token .token_utilities {
+    background-image: url(../assets/images/void-token-vw.png);
+    background-position: center center;
+    background-size: contain;
+    width: 76%;
+    margin: 0% auto;
+  }
+}
+
+@media (min-width: 720px) and (min-width: 1300px) {
+  #token .token_utilities {
+    width: 60%;
+  }
+}
+
+@media (min-width: 720px) and (min-width: 1640px) {
+  #token .token_utilities {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

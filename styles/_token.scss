@@ -1,15 +1,54 @@
 #token {
   background-color: black;
-  min-height: 40vh;
+  height: 60vh;
   display: flex;
   margin: 0 auto;
   .token_utilities {
-    background-image: url(../assets/images/the-void.png);
+    background-image: url(../assets/images/void-utility.png);
     background-position: center center;
     background-size: cover;
     width: 100%;
-    // height: 30em;
-    // margin: 0 5%;
-    // padding: 10em;
+    margin: 5% auto;
+  }
+  @media (min-width: 300px) {
+    height: 75vh;
+  }
+  @media (min-width: $bp-phone-1) {
+    height: 85vh;
+  }
+  @media (min-width: 420px) {
+    height: 75vh;
+    .token_utilities {
+      background-image: url(../assets/images/void-token-vw.png);
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      margin: 0% auto;
+    }
+  }
+
+  @media (min-width: 530px) {
+    height: 65vh;
+  }
+  @media (min-width: 680px) {
+    height: 50vh;
+  }
+
+  @media (min-width: $bp-tablet) {
+    height: 50vh;
+    .token_utilities {
+      background-image: url(../assets/images/void-token-vw.png);
+      background-position: center center;
+      background-size: contain;
+      width: 76%;
+      margin: 0% auto;
+
+      @media (min-width: 1300px) {
+        width: 60%;
+      }
+      @media (min-width: 1640px) {
+        width: 50%;
+      }
+    }
   }
 }

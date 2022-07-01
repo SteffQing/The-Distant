@@ -19,6 +19,7 @@ main {
         .hero-content {
           max-width: 75%;
           position: relative;
+          text-align: left;
           top: 25%;
         }
       }
@@ -33,6 +34,7 @@ main {
       min-width: 45ch;
       margin: 0 auto;
       padding: 1em 0;
+      text-align: center;
       h1 {
         font-size: $h1;
         font-family: "robotobold";

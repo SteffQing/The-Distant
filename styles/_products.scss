@@ -1,36 +1,52 @@
 #products {
   width: 100%;
+  h2 {
+    text-align: center;
+    font-size: $h2;
+    padding: 1.3rem;
+  }
   .grid-content {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 2%;
+    grid-row-gap: 0.3%;
     justify-items: stretch;
-    align-items: center;
-    margin: 0 10rem;
-    h2 {
-      text-align: center;
-      font-size: $h2;
-      padding-top: 2.3rem;
-    }
+    margin: 1%;
     .marketplace,
     .lending,
     .game-guild,
     .launchpad,
     .bridge {
-      min-height: 40vh;
       display: flex;
-      margin: 0 auto;
+      border: 2px solid orange;
+      padding: 1.5em;
+      line-height: 3;
+      flex-direction: column;
+      color: #fff;
     }
     .marketplace {
+      background-image: url(../assets/images/nft-marketplace-bg.jpeg);
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: orange;
+        font-family: "robotoblack";
+      }
       .img {
-        background-image: url(../assets/images/images/NFT_marketplace.png);
+        background-image: url(../assets/images/NFT_marketplace-new-copy.png);
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
+        order: 2;
+        background-repeat: no-repeat;
+        padding: 15em;
       }
       .description {
+        order: 1;
         text-align: center;
         font-size: $p;
         width: 100%;
@@ -38,14 +54,27 @@
       }
     }
     .lending {
+      background-image: url(../assets/images/lending-bg.jpeg);
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: orange;
+        font-family: "robotoblack";
+      }
       .img {
-        background-image: url(../assets/images/images/lending.jpg);
+        background-image: url(../assets/images/lending.png);
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
         order: 2;
+        background-repeat: no-repeat;
+        padding: 15em;
       }
       .description {
+        order: 1;
         text-align: center;
         font-size: $p;
         width: 100%;
@@ -53,13 +82,27 @@
       }
     }
     .game-guild {
+      background-image: url(../assets/images/game-guild-bg.jpg);
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: orange;
+        font-family: "robotoblack";
+      }
       .img {
-        background-image: url(../assets/images/images/Guild.jpg);
+        background-image: url(../assets/images/game-guild.png);
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
+        order: 2;
+        background-repeat: no-repeat;
+        padding: 15em;
       }
       .description {
+        order: 1;
         text-align: center;
         font-size: $p;
         width: 100%;
@@ -67,14 +110,27 @@
       }
     }
     .launchpad {
+      background-image: url(../assets/images/launchpad-bg.jpeg);
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: orange;
+        font-family: "robotoblack";
+      }
       .img {
-        background-image: url(../assets/images/images/launchpad.jpg);
+        background-image: url(../assets/images/launchpad.png);
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
         order: 2;
+        background-repeat: no-repeat;
+        padding: 15em;
       }
       .description {
+        order: 1;
         text-align: center;
         font-size: $p;
         width: 100%;
@@ -82,13 +138,27 @@
       }
     }
     .bridge {
+      background-image: url(../assets/images/bridge-bg.png);
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: orange;
+        font-family: "robotoblack";
+      }
       .img {
-        background-image: url(../assets/images/images/bgtriaL.jpg);
+        background-image: url(../assets/images/bridge.png);
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         width: 100%;
+        order: 2;
+        background-repeat: no-repeat;
+        padding: 15em;
       }
       .description {
+        order: 1;
         text-align: center;
         font-size: $p;
         width: 100%;
