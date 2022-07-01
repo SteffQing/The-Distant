@@ -4,7 +4,30 @@
   padding: 1.5em;
   line-height: 3;
   flex-direction: column;
-  color: #fff;
+  color: white;
+  border-radius: 7px;
+}
+
+@mixin gridcontent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  justify-items: stretch;
+  align-items: center;
+  min-height: 50em;
+}
+
+@mixin gridcontent2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  justify-items: stretch;
+  align-items: center;
+  min-height: 50em;
 }
 
 @mixin background($image) {
@@ -24,10 +47,11 @@
   padding: 15em;
 }
 
-@mixin h3() {
+@mixin h3 {
   text-transform: uppercase;
   font-weight: 400;
   color: orange;
+  font-size: $h2;
   font-family: "robotoblack";
 }
 
@@ -39,12 +63,18 @@
   font-family: "robotoblack_italic";
 }
 
+@mixin media {
+  @media (max-width: 340px) {
+    padding: 10em;
+  }
+}
+
+@mixin order {
+  order: 1;
+}
+
 #products {
   width: 100%;
-  @media (max-width: 340px) {
-    width: 90%;
-  }
-  background-color: aqua;
   h2 {
     text-align: center;
     font-size: $h2;
@@ -64,6 +94,18 @@
     .launchpad,
     .bridge {
       @include flexcontent();
+      @media (min-width: $bp-tablet) {
+        @include gridcontent();
+      }
+    }
+    .lending,
+    .launchpad {
+      @media (min-width: $bp-tablet) {
+        @include gridcontent2();
+      }
+    }
+    h3 {
+      @include h3();
     }
     .marketplace {
       @include background("../assets/images/nft-marketplace-bg.jpeg");
@@ -72,6 +114,7 @@
       }
       .img {
         @include img("../assets/images/NFT_marketplace-new-copy.png");
+        @include media();
       }
       .description {
         @include description();
@@ -84,18 +127,23 @@
       }
       .img {
         @include img("../assets/images/lending.png");
+        @include media();
+        @media (min-width: $bp-tablet) {
+          @include order();
+        }
       }
       .description {
         @include description();
       }
     }
     .game-guild {
-      @include background("../assets/images/game-guild-bg.jpeg");
+      @include background("../assets/images/game-guild-bg.jpg");
       h3 {
         @include h3();
       }
       .img {
         @include img("../assets/images/game-guild.png");
+        @include media();
       }
       .description {
         @include description();
@@ -103,23 +151,29 @@
     }
     .launchpad {
       @include background("../assets/images/launchpad-bg.jpeg");
+      background-position: top center;
       h3 {
         @include h3();
       }
       .img {
         @include img("../assets/images/launchpad.png");
+        @include media();
+        @media (min-width: $bp-tablet) {
+          @include order();
+        }
       }
       .description {
         @include description();
       }
     }
     .bridge {
-      @include background("../assets/images/bridge-bg.jpeg");
+      @include background("../assets/images/bridge-bg.png");
       h3 {
         @include h3();
       }
       .img {
         @include img("../assets/images/bridge.png");
+        @include media();
       }
       .description {
         @include description();

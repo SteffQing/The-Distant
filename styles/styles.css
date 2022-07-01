@@ -356,13 +356,6 @@ article aside #about-image {
 
 #products {
   width: 100%;
-  background-color: aqua;
-}
-
-@media (max-width: 340px) {
-  #products {
-    width: 90%;
-  }
 }
 
 #products h2 {
@@ -399,7 +392,57 @@ article aside #about-image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #fff;
+  color: white;
+  border-radius: 7px;
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .marketplace,
+  #products .grid-content .lending,
+  #products .grid-content .game-guild,
+  #products .grid-content .launchpad,
+  #products .grid-content .bridge {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 50em;
+  }
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .lending,
+  #products .grid-content .launchpad {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 50em;
+  }
+}
+
+#products .grid-content h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: orange;
+  font-size: clamp(2em, 2.5vw, 4em);
+  font-family: "robotoblack";
 }
 
 #products .grid-content .marketplace {
@@ -413,6 +456,7 @@ article aside #about-image {
   text-transform: uppercase;
   font-weight: 400;
   color: orange;
+  font-size: clamp(2em, 2.5vw, 4em);
   font-family: "robotoblack";
 }
 
@@ -426,6 +470,12 @@ article aside #about-image {
           order: 2;
   background-repeat: no-repeat;
   padding: 15em;
+}
+
+@media (max-width: 340px) {
+  #products .grid-content .marketplace .img {
+    padding: 10em;
+  }
 }
 
 #products .grid-content .marketplace .description {
@@ -449,6 +499,7 @@ article aside #about-image {
   text-transform: uppercase;
   font-weight: 400;
   color: orange;
+  font-size: clamp(2em, 2.5vw, 4em);
   font-family: "robotoblack";
 }
 
@@ -464,6 +515,20 @@ article aside #about-image {
   padding: 15em;
 }
 
+@media (max-width: 340px) {
+  #products .grid-content .lending .img {
+    padding: 10em;
+  }
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .lending .img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 #products .grid-content .lending .description {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -475,7 +540,7 @@ article aside #about-image {
 }
 
 #products .grid-content .game-guild {
-  background-image: url("../assets/images/game-guild-bg.jpeg");
+  background-image: url("../assets/images/game-guild-bg.jpg");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -485,6 +550,7 @@ article aside #about-image {
   text-transform: uppercase;
   font-weight: 400;
   color: orange;
+  font-size: clamp(2em, 2.5vw, 4em);
   font-family: "robotoblack";
 }
 
@@ -498,6 +564,12 @@ article aside #about-image {
           order: 2;
   background-repeat: no-repeat;
   padding: 15em;
+}
+
+@media (max-width: 340px) {
+  #products .grid-content .game-guild .img {
+    padding: 10em;
+  }
 }
 
 #products .grid-content .game-guild .description {
@@ -515,12 +587,14 @@ article aside #about-image {
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-position: top center;
 }
 
 #products .grid-content .launchpad h3 {
   text-transform: uppercase;
   font-weight: 400;
   color: orange;
+  font-size: clamp(2em, 2.5vw, 4em);
   font-family: "robotoblack";
 }
 
@@ -536,6 +610,20 @@ article aside #about-image {
   padding: 15em;
 }
 
+@media (max-width: 340px) {
+  #products .grid-content .launchpad .img {
+    padding: 10em;
+  }
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .launchpad .img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 #products .grid-content .launchpad .description {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -547,7 +635,7 @@ article aside #about-image {
 }
 
 #products .grid-content .bridge {
-  background-image: url("../assets/images/bridge-bg.jpeg");
+  background-image: url("../assets/images/bridge-bg.png");
   background-position: center center;
   background-size: cover;
   width: 100%;
@@ -557,6 +645,7 @@ article aside #about-image {
   text-transform: uppercase;
   font-weight: 400;
   color: orange;
+  font-size: clamp(2em, 2.5vw, 4em);
   font-family: "robotoblack";
 }
 
@@ -570,6 +659,12 @@ article aside #about-image {
           order: 2;
   background-repeat: no-repeat;
   padding: 15em;
+}
+
+@media (max-width: 340px) {
+  #products .grid-content .bridge .img {
+    padding: 10em;
+  }
 }
 
 #products .grid-content .bridge .description {
