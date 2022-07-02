@@ -28,10 +28,13 @@ main {
         order: 2;
       }
     }
+    @media (min-width: $bp-pc) {
+      height: 100vh;
+    }
     .hero {
       width: 90%;
       min-width: 45ch;
-      margin: 0 auto;
+      margin: auto;
       padding: 1em 0;
       text-align: center;
       h1 {

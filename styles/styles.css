@@ -223,10 +223,16 @@ main header {
   }
 }
 
+@media (min-width: 1025px) {
+  main header {
+    height: 100vh;
+  }
+}
+
 main header .hero {
   width: 90%;
   min-width: 45ch;
-  margin: 0 auto;
+  margin: auto;
   padding: 1em 0;
   text-align: center;
 }
@@ -355,12 +361,14 @@ article aside #about-image {
 
 #products {
   width: 100%;
+  background-color: black;
 }
 
 #products h2 {
   text-align: center;
   font-size: clamp(2em, 2.5vw, 4em);
   padding: 1.3rem;
+  color: white;
 }
 
 #products .grid-content {
@@ -371,9 +379,8 @@ article aside #about-image {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-row-gap: 0.3%;
   justify-items: stretch;
-  margin: 1%;
+  margin: 0 1%;
 }
 
 #products .grid-content .marketplace,
@@ -381,6 +388,7 @@ article aside #about-image {
 #products .grid-content .game-guild,
 #products .grid-content .launchpad,
 #products .grid-content .bridge {
+  margin: 1% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,10 +453,11 @@ article aside #about-image {
 }
 
 #products .grid-content .marketplace {
-  background-image: url("../assets/images/nft-marketplace-bg.jpeg");
+  background-image: url("../images/nft-marketplace-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-color: #1f1f24;
 }
 
 #products .grid-content .marketplace h3 {
@@ -488,10 +497,11 @@ article aside #about-image {
 }
 
 #products .grid-content .lending {
-  background-image: url("../assets/images/lending-bg.jpeg");
+  background-image: url("../images/lending-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-color: #1f1f24;
 }
 
 #products .grid-content .lending h3 {
@@ -539,10 +549,11 @@ article aside #about-image {
 }
 
 #products .grid-content .game-guild {
-  background-image: url("../assets/images/game-guild-bg.jpg");
+  background-image: url("../images/game-guild-bg.jpg");
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-color: #1f1f24;
 }
 
 #products .grid-content .game-guild h3 {
@@ -582,10 +593,11 @@ article aside #about-image {
 }
 
 #products .grid-content .launchpad {
-  background-image: url("../assets/images/launchpad-bg.jpeg");
+  background-image: url("../images/launchpad-bg.jpeg");
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-color: #1f1f24;
   background-position: top center;
 }
 
@@ -634,10 +646,11 @@ article aside #about-image {
 }
 
 #products .grid-content .bridge {
-  background-image: url("../assets/images/bridge-bg2.png");
+  background-image: url("../images/bridge-bg2.png");
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-color: #1f1f24;
 }
 
 #products .grid-content .bridge h3 {

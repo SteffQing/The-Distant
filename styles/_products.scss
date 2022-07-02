@@ -35,6 +35,7 @@
   background-position: center center;
   background-size: cover;
   width: 100%;
+  background-color: #1f1f24;
 }
 
 @mixin img($image) {
@@ -75,24 +76,27 @@
 
 #products {
   width: 100%;
+  background-color: black;
   h2 {
     text-align: center;
     font-size: $h2;
     padding: 1.3rem;
+    color: white;
   }
   .grid-content {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 0.3%;
+    // grid-row-gap: 0.3%;
     justify-items: stretch;
-    margin: 1%;
+    margin: 0 1%;
     .marketplace,
     .lending,
     .game-guild,
     .launchpad,
     .bridge {
+      margin: 1% auto;
       @include flexcontent();
       @media (min-width: $bp-tablet) {
         @include gridcontent();
@@ -108,7 +112,7 @@
       @include h3();
     }
     .marketplace {
-      @include background("../assets/images/nft-marketplace-bg.jpeg");
+      @include background("../images/nft-marketplace-bg.jpeg");
       h3 {
         @include h3();
       }
@@ -121,7 +125,7 @@
       }
     }
     .lending {
-      @include background("../assets/images/lending-bg.jpeg");
+      @include background("../images/lending-bg.jpeg");
       h3 {
         @include h3();
       }
@@ -137,7 +141,7 @@
       }
     }
     .game-guild {
-      @include background("../assets/images/game-guild-bg.jpg");
+      @include background("../images/game-guild-bg.jpg");
       h3 {
         @include h3();
       }
@@ -150,7 +154,7 @@
       }
     }
     .launchpad {
-      @include background("../assets/images/launchpad-bg.jpeg");
+      @include background("../images/launchpad-bg.jpeg");
       background-position: top center;
       h3 {
         @include h3();
@@ -167,7 +171,7 @@
       }
     }
     .bridge {
-      @include background("../assets/images/bridge-bg2.png");
+      @include background("../images/bridge-bg2.png");
       h3 {
         @include h3();
       }
