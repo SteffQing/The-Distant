@@ -115,9 +115,11 @@ a:active {
 nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 3fr;
-      grid-template-columns: 2fr 3fr;
-  grid-column-gap: 10%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  grid-column-gap: 20%;
   justify-items: stretch;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -125,9 +127,14 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 99;
+  padding: 1em;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
 }
 
-nav span {
+nav .logo {
   background-image: url(../assets/images/DISTANT2.png);
   background-position: center center;
   background-size: cover;
@@ -137,43 +144,79 @@ nav span {
   margin: 0 auto;
 }
 
+nav .start {
+  font-size: clamp(2em, 2.5vw, 4em);
+  text-align: right;
+  color: purple;
+  padding-right: 1em;
+}
+
+nav ul {
+  display: none;
+}
+
 @media (min-width: 720px) {
-  nav span {
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    grid-column-gap: 10%;
+    justify-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+  }
+  nav .logo {
+    background-image: url(../assets/images/DISTANT2.png);
+    background-position: center center;
+    background-size: cover;
+    width: 13em;
+    max-width: 70%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 720px) and (min-width: 720px) {
+  nav .logo {
     width: 50%;
     margin-left: 1em;
   }
 }
 
-nav ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 3%;
-  grid-row-gap: 0%;
-  justify-items: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 4rem;
-  background: rgba(255, 255, 255, 0.36);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  padding: 0 5em;
-  border-bottom-left-radius: 5px;
-}
-
-nav li {
-  list-style: none;
-  font-size: clamp(1.6rem, 1.2vw, 2.2rem);
-  font-family: "robotoregular";
-  color: #e174b7;
-}
-
-nav li a:link {
-  color: #e174b7;
+@media (min-width: 720px) {
+  nav .start {
+    display: none;
+  }
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3%;
+    grid-row-gap: 0%;
+    justify-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 4rem;
+    padding: 0 5em;
+    border-bottom-left-radius: 5px;
+  }
+  nav li {
+    list-style: none;
+    font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+    font-family: "robotoregular";
+    color: #e174b7;
+  }
+  nav li a:link {
+    color: #e174b7;
+  }
 }
 
 main {
@@ -264,6 +307,7 @@ main header .hero button {
   padding: 0.4em 2em;
   font-size: clamp(1.5rem, 1.7vw, 2rem);
   font-family: "robotoblack";
+  cursor: pointer;
 }
 
 main header .hero_image {
@@ -422,6 +466,7 @@ article aside #about-image {
         -ms-flex-align: center;
             align-items: center;
     min-height: 50em;
+    line-height: 2;
   }
 }
 
@@ -449,14 +494,11 @@ article aside #about-image {
   font-weight: 400;
   color: orange;
   font-size: clamp(2em, 2.5vw, 4em);
+  text-align: center;
   font-family: "robotoblack";
 }
 
 #products .grid-content .marketplace {
-  background-image: url("../images/nft-marketplace-bg.jpeg");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
   background-color: #1f1f24;
 }
 
@@ -465,6 +507,7 @@ article aside #about-image {
   font-weight: 400;
   color: orange;
   font-size: clamp(2em, 2.5vw, 4em);
+  text-align: center;
   font-family: "robotoblack";
 }
 
@@ -493,14 +536,16 @@ article aside #about-image {
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
-  font-family: "robotoblack_italic";
+  font-family: "robotoregular";
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .marketplace .description {
+    text-align: left;
+  }
 }
 
 #products .grid-content .lending {
-  background-image: url("../images/lending-bg.jpeg");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
   background-color: #1f1f24;
 }
 
@@ -509,6 +554,7 @@ article aside #about-image {
   font-weight: 400;
   color: orange;
   font-size: clamp(2em, 2.5vw, 4em);
+  text-align: center;
   font-family: "robotoblack";
 }
 
@@ -545,14 +591,16 @@ article aside #about-image {
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
-  font-family: "robotoblack_italic";
+  font-family: "robotoregular";
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .lending .description {
+    text-align: right;
+  }
 }
 
 #products .grid-content .game-guild {
-  background-image: url("../images/game-guild-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
   background-color: #1f1f24;
 }
 
@@ -561,6 +609,7 @@ article aside #about-image {
   font-weight: 400;
   color: orange;
   font-size: clamp(2em, 2.5vw, 4em);
+  text-align: center;
   font-family: "robotoblack";
 }
 
@@ -589,14 +638,16 @@ article aside #about-image {
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
-  font-family: "robotoblack_italic";
+  font-family: "robotoregular";
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .game-guild .description {
+    text-align: left;
+  }
 }
 
 #products .grid-content .launchpad {
-  background-image: url("../images/launchpad-bg.jpeg");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
   background-color: #1f1f24;
   background-position: top center;
 }
@@ -606,6 +657,7 @@ article aside #about-image {
   font-weight: 400;
   color: orange;
   font-size: clamp(2em, 2.5vw, 4em);
+  text-align: center;
   font-family: "robotoblack";
 }
 
@@ -642,14 +694,16 @@ article aside #about-image {
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
-  font-family: "robotoblack_italic";
+  font-family: "robotoregular";
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .launchpad .description {
+    text-align: right;
+  }
 }
 
 #products .grid-content .bridge {
-  background-image: url("../images/bridge-bg2.png");
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
   background-color: #1f1f24;
 }
 
@@ -658,6 +712,7 @@ article aside #about-image {
   font-weight: 400;
   color: orange;
   font-size: clamp(2em, 2.5vw, 4em);
+  text-align: center;
   font-family: "robotoblack";
 }
 
@@ -686,7 +741,13 @@ article aside #about-image {
   text-align: center;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
   width: 100%;
-  font-family: "robotoblack_italic";
+  font-family: "robotoregular";
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .bridge .description {
+    text-align: left;
+  }
 }
 
 #token {

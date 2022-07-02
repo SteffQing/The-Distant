@@ -151,3 +151,14 @@ button:hover span:after {
   font-size: var(--medium-font);
   color: var(--secondary-text-color);
 }
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
