@@ -1,53 +1,57 @@
 #token {
   background-color: black;
-  height: 60vh;
+  // height: 60vh;
   display: flex;
   margin: 0 auto;
   .token_utilities {
     background-image: url(../assets/images/void-utility.png);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
     margin: 5% auto;
+    padding: 15em;
   }
-  @media (min-width: 300px) {
-    height: 75vh;
-  }
+  // @media (min-width: 300px) {
+  //   height: 75vh;
+  // }
   @media (min-width: $bp-phone-1) {
-    height: 85vh;
+    // height: 85vh;
   }
   @media (min-width: 420px) {
-    height: 75vh;
-    .token_utilities {
-      background-image: url(../assets/images/void-token-vw.png);
-      background-position: center center;
-      background-size: cover;
-      width: 100%;
-      margin: 0% auto;
-    }
-  }
-
-  @media (min-width: 530px) {
-    height: 65vh;
-  }
-  @media (min-width: 680px) {
-    height: 50vh;
-  }
-
-  @media (min-width: $bp-tablet) {
-    height: 50vh;
     .token_utilities {
       background-image: url(../assets/images/void-token-vw.png);
       background-position: center center;
       background-size: contain;
-      width: 76%;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin: 0% auto;
+      padding: 15em;
+    }
+  }
+
+  // @media (min-width: 530px) {
+  //   height: 65vh;
+  // }
+  // @media (min-width: 680px) {
+  //   height: 50vh;
+  // }
+
+  @media (min-width: $bp-tablet) {
+    .token_utilities {
+      background-image: url(../assets/images/void-token-vw.png);
+      background-position: center center;
+      background-size: contain;
+      width: 100%;
+      padding: 20em;
       margin: 0% auto;
 
       @media (min-width: 1300px) {
-        width: 60%;
+        width: 100%;
+        padding: 25em;
       }
       @media (min-width: 1640px) {
-        width: 50%;
+        width: 100%;
       }
     }
   }

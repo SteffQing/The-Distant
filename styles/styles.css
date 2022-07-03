@@ -135,7 +135,7 @@ nav {
 }
 
 nav .logo {
-  background-image: url(../assets/images/DISTANT2.png);
+  background-image: url(../assets/images/logo.png);
   background-position: center center;
   background-size: cover;
   width: 13em;
@@ -172,7 +172,7 @@ nav ul {
     background-color: transparent;
   }
   nav .logo {
-    background-image: url(../assets/images/DISTANT2.png);
+    background-image: url(../assets/images/logo.png);
     background-position: center center;
     background-size: cover;
     width: 13em;
@@ -762,7 +762,6 @@ article aside #about-image {
 
 #token {
   background-color: black;
-  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,70 +771,46 @@ article aside #about-image {
 #token .token_utilities {
   background-image: url(../assets/images/void-utility.png);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
   margin: 5% auto;
-}
-
-@media (min-width: 300px) {
-  #token {
-    height: 75vh;
-  }
-}
-
-@media (min-width: 360px) {
-  #token {
-    height: 85vh;
-  }
+  padding: 15em;
 }
 
 @media (min-width: 420px) {
-  #token {
-    height: 75vh;
-  }
-  #token .token_utilities {
-    background-image: url(../assets/images/void-token-vw.png);
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    margin: 0% auto;
-  }
-}
-
-@media (min-width: 530px) {
-  #token {
-    height: 65vh;
-  }
-}
-
-@media (min-width: 680px) {
-  #token {
-    height: 50vh;
-  }
-}
-
-@media (min-width: 720px) {
-  #token {
-    height: 50vh;
-  }
   #token .token_utilities {
     background-image: url(../assets/images/void-token-vw.png);
     background-position: center center;
     background-size: contain;
-    width: 76%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0% auto;
+    padding: 15em;
+  }
+}
+
+@media (min-width: 720px) {
+  #token .token_utilities {
+    background-image: url(../assets/images/void-token-vw.png);
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    padding: 20em;
     margin: 0% auto;
   }
 }
 
 @media (min-width: 720px) and (min-width: 1300px) {
   #token .token_utilities {
-    width: 60%;
+    width: 100%;
+    padding: 25em;
   }
 }
 
 @media (min-width: 720px) and (min-width: 1640px) {
   #token .token_utilities {
-    width: 50%;
+    width: 100%;
   }
 }
 
