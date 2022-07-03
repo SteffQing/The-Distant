@@ -422,7 +422,7 @@ article aside #about-image {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   justify-items: stretch;
-  margin: 0 1%;
+  margin: 0 5%;
 }
 
 #products .grid-content .marketplace,
@@ -430,7 +430,7 @@ article aside #about-image {
 #products .grid-content .game-guild,
 #products .grid-content .launchpad,
 #products .grid-content .bridge {
-  margin: 1% auto;
+  margin: 4% auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,6 +449,26 @@ article aside #about-image {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 7px;
+}
+
+@media (min-width: 720px) {
+  #products .grid-content .marketplace,
+  #products .grid-content .lending,
+  #products .grid-content .game-guild,
+  #products .grid-content .launchpad,
+  #products .grid-content .bridge {
+    margin: 2% auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  #products .grid-content .marketplace,
+  #products .grid-content .lending,
+  #products .grid-content .game-guild,
+  #products .grid-content .launchpad,
+  #products .grid-content .bridge {
+    margin: 1% auto;
+  }
 }
 
 @media (min-width: 720px) {
@@ -790,6 +810,12 @@ article aside #about-image {
   }
 }
 
+@media (min-width: 520px) {
+  #token .token_utilities {
+    padding: 18em;
+  }
+}
+
 @media (min-width: 720px) {
   #token .token_utilities {
     background-image: url(../assets/images/void-token-vw.png);
@@ -801,14 +827,14 @@ article aside #about-image {
   }
 }
 
-@media (min-width: 720px) and (min-width: 1300px) {
+@media (min-width: 1300px) {
   #token .token_utilities {
     width: 100%;
     padding: 25em;
   }
 }
 
-@media (min-width: 720px) and (min-width: 1640px) {
+@media (min-width: 1640px) {
   #token .token_utilities {
     width: 100%;
   }

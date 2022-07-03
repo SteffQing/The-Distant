@@ -97,16 +97,26 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    // grid-row-gap: 0.3%;
     justify-items: stretch;
-    margin: 0 1%;
+    margin: 0 5%;
+    // @media (min-width: $bp-tablet) {
+    //   margin: 0 3%;
+    // }
+    // @media (min-width: $bp-pc) {
+    //   margin: 0 1%;
+    // }
     .marketplace,
     .lending,
     .game-guild,
     .launchpad,
     .bridge {
-      margin: 1% auto;
+      margin: 4% auto;
+      @media (min-width: $bp-tablet) {
+        margin: 2% auto;
+      }
+      @media (min-width: $bp-pc) {
+        margin: 1% auto;
+      }
       @include flexcontent();
       @media (min-width: $bp-tablet) {
         @include gridcontent();
