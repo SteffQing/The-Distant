@@ -39,7 +39,9 @@ footer {
         &:hover {
           scale: 2;
           color: aqua;
-          
+        }
+        svg {
+          font-size: 24px;
         }
       }
     }

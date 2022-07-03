@@ -16,7 +16,8 @@ nav {
   .logo {
     background-image: url(../assets/images/logo.png);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 13em;
     max-width: 70%;
     height: 100%;
@@ -50,7 +51,8 @@ nav {
     .logo {
       background-image: url(../assets/images/logo.png);
       background-position: center center;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       width: 13em;
       max-width: 70%;
       height: 100%;
