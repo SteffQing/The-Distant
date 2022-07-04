@@ -1,26 +1,12 @@
-// const menu = document.querySelector('.menu')
-// const navLinks = document.querySelector('.nav')
-// let hamburgerOpen = false
-
-// menu.addEventListener('click', () => {
-//     if(hamburgerOpen){
-//         navLinks.classList.toggle("navlink")
-//         menu.classList.toggle("menuclose")
-//     } else{
-//         navLinks.classList.remove("show-navlinks")
-//         menu.classList.remove("menuclose")
-//         hamburgerOpen = false
-//     }
-// })
 
 
-function scrollFunction() { 
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
-    document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo_img.png')"; 
-  } else { 
-    document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo.png')"; 
-  } 
-}
+// function scrollFunction() { 
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
+//     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo_img.png')"; 
+//   } else { 
+//     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo.png')"; 
+//   } 
+// }
 
 
 function reveal() {
@@ -46,23 +32,23 @@ function reveal() {
   // 
 
   
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+// function reveal() {
+//   var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerHeight;
+//     var elementTop = reveals[i].getBoundingClientRect().top;
+//     var elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
+//     if (elementTop < windowHeight - elementVisible) {
+//       reveals[i].classList.add("active");
+//     } else {
+//       reveals[i].classList.remove("active");
+//     }
+//   }
+// }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
 
 
 

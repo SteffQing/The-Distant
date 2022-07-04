@@ -225,8 +225,8 @@
 }
 
 .marketplace {
-  transform: translateX(90%);
-  transition: all 1000ms ease-in-out;
+  transform: translateX(10%);
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 .marketplace.active {
@@ -234,8 +234,8 @@
   opacity: 1;
 }
 .lending {
-  transform: translateX(-90%);
-  transition: all 1000ms ease-in-out;
+  transform: translateX(-10%);
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 .lending.active {
@@ -243,8 +243,8 @@
   opacity: 1;
 }
 .bridge {
-  transform: translateX(90%);
-  transition: all 1000ms ease-in-out;
+  transform: translateX(10%);
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 .bridge.active {
@@ -252,8 +252,8 @@
   opacity: 1;
 }
 .game-guild {
-  transform: translateX(-90%);
-  transition: all 1000ms ease-in-out;
+  transform: translateX(-10%);
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 .game-guild.active {
@@ -261,8 +261,8 @@
   opacity: 1;
 }
 .launchpad {
-  transform: translateX(90%);
-  transition: all 1000ms ease-in-out;
+  transform: translateX(10%);
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 .launchpad.active {

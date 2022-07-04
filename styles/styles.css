@@ -102,19 +102,6 @@ body::-webkit-scrollbar-thumb:hover {
   right: 50%;
 }
 
-.preloader h1 {
-  position: absolute;
-  text-align: center;
-  color: red;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  font-size: 5vw;
-  padding: 5%;
-  -webkit-animation: appear 4s linear forwards;
-          animation: appear 4s linear forwards;
-}
-
 @-webkit-keyframes appear {
   100% {
     opacity: 1;
@@ -125,19 +112,6 @@ body::-webkit-scrollbar-thumb:hover {
   100% {
     opacity: 1;
   }
-}
-
-.preloader h2 {
-  position: absolute;
-  font-size: 5vw;
-  top: 50%;
-  left: 50%;
-  padding: 10%;
-  text-align: center;
-  color: red;
-  opacity: 0;
-  -webkit-animation: appear1 4s linear forwards;
-          animation: appear1 4s linear forwards;
 }
 
 @-webkit-keyframes appear1 {
@@ -998,10 +972,10 @@ article aside #about-image {
 }
 
 .marketplace {
-  -webkit-transform: translateX(90%);
-          transform: translateX(90%);
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 
@@ -1012,10 +986,10 @@ article aside #about-image {
 }
 
 .lending {
-  -webkit-transform: translateX(-90%);
-          transform: translateX(-90%);
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 
@@ -1026,10 +1000,10 @@ article aside #about-image {
 }
 
 .bridge {
-  -webkit-transform: translateX(90%);
-          transform: translateX(90%);
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 
@@ -1040,10 +1014,10 @@ article aside #about-image {
 }
 
 .game-guild {
-  -webkit-transform: translateX(-90%);
-          transform: translateX(-90%);
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 
@@ -1054,10 +1028,10 @@ article aside #about-image {
 }
 
 .launchpad {
-  -webkit-transform: translateX(90%);
-          transform: translateX(90%);
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   opacity: 0;
 }
 
@@ -1309,51 +1283,27 @@ footer .container .resources h2,
 footer .container .jobs h2,
 footer .container .contact h2 {
   margin: 5%;
-  font-size: clamp(1.8em, 2.1vw, 3.5em);
+  font-size: clamp(2em, 2.5vw, 4em);
   font-family: "robotoregular";
   font-weight: 300;
-}
-
-footer .container .socials h2 span,
-footer .container .resources h2 span,
-footer .container .jobs h2 span,
-footer .container .contact h2 span {
-  font-size: 20px;
 }
 
 footer .container .socials li,
 footer .container .resources li,
 footer .container .jobs li,
 footer .container .contact li {
-  list-style: none;
   font-size: clamp(1.6rem, 1.2vw, 2.2rem);
+  cursor: pointer;
   margin: 5%;
   font-family: "robotolight_italic";
-}
-
-footer .container .socials li a:link,
-footer .container .resources li a:link,
-footer .container .jobs li a:link,
-footer .container .contact li a:link {
-  text-decoration: none;
-  color: gray;
-  -webkit-transition: color 500ms ease-in-out;
-  transition: color 500ms ease-in-out;
-}
-
-footer .container .socials li a:visited,
-footer .container .resources li a:visited,
-footer .container .jobs li a:visited,
-footer .container .contact li a:visited {
-  text-decoration: none;
   color: gray;
 }
 
-footer .container .socials li a:hover,
-footer .container .resources li a:hover,
-footer .container .jobs li a:hover,
-footer .container .contact li a:hover {
-  text-decoration: none;
+footer .container .socials li:hover,
+footer .container .resources li:hover,
+footer .container .jobs li:hover,
+footer .container .contact li:hover {
+  scale: 2;
   color: aqua;
 }
 
