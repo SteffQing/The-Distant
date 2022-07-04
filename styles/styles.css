@@ -4,6 +4,7 @@ html {
 
 * {
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1305,13 +1306,6 @@ footer .container .jobs li:hover,
 footer .container .contact li:hover {
   scale: 2;
   color: aqua;
-}
-
-footer .container .socials li svg,
-footer .container .resources li svg,
-footer .container .jobs li svg,
-footer .container .contact li svg {
-  font-size: 24px;
 }
 
 footer .hr {
