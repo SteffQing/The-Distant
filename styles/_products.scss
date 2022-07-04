@@ -223,3 +223,49 @@
     }
   }
 }
+
+.marketplace {
+  transform: translateX(90%);
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+}
+.marketplace.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.lending {
+  transform: translateX(-90%);
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+}
+.lending.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.bridge {
+  transform: translateX(90%);
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+}
+.bridge.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.game-guild {
+  transform: translateX(-90%);
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+}
+.game-guild.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.launchpad {
+  transform: translateX(90%);
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+}
+.launchpad.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
