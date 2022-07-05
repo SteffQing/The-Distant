@@ -59,14 +59,33 @@ main {
         line-height: 1.32;
       }
       button {
-        background-color: $textSec;
+        background:url(../assets/svg/downarrow.svg);
         color: #000;
         margin: 1em 0;
         border-radius: 7px;
         padding: 0.4em 2em;
         font-size: $p2;
+        height:90px;
+        background-repeat: no-repeat;
         font-family: "robotoblack";
         cursor: pointer;
+        animation: jump 4s ease-in 4 forwards;
+      }
+
+      @keyframes jump{
+        10%{
+          transform: translateY(20px);
+        }
+        40%{
+          transform: translateY(0px);
+        }
+        70%{
+          transform: translateY(20px);
+        }
+        90%{
+          transform: translateY(0px);
+        }
+        
       }
     }
     .hero_image {

@@ -1,11 +1,3 @@
- function scrollFunction() { 
-   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
-     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo_img.png')"; 
-   } else { 
-     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo.png')"; 
-   } 
-}
-
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -140,3 +132,12 @@ function launchpad() {
 
 window.addEventListener("scroll", launchpad);
 
+window.onscroll = function() {scrollFunction()};
+ function scrollFunction() { 
+   if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) { 
+     document.getElementById("up").style.backgroundImage = "url('../assets/svg/uparrow.svg')";
+     document.getElementById("up").style.boxShadow = 4,4,3,white;
+   } else { 
+     document.getElementById("up").style.backgroundImage = "url('../assets/svg/uparroerw.svg')"; 
+   } 
+ }

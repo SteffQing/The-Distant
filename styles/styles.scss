@@ -44,6 +44,10 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
   width: 20px;
 }
+.website{
+  width:100%;
+
+}
 @import "./preloader";
 @import "./variables";
 @import "./fonts";
@@ -55,3 +59,14 @@ body::-webkit-scrollbar-thumb:hover {
 @import "./token";
 @import "./roadmap";
 @import "./footer";
+
+.up{
+  position: fixed;
+  background:url(../assets/svg/uparrow.svg) ;
+  height:50px;
+  width:50px;
+  background-size:100%;
+  bottom:60px;
+  right:30px;
+  transition: background 2s;
+}
