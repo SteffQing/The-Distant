@@ -465,11 +465,11 @@ main header .hero p {
 }
 main header .hero button {
   background: url(../assets/svg/downarrow.svg);
-  color: #000;
   margin: 1em 0;
   border-radius: 7px;
   padding: 0.4em 2em;
   font-size: clamp(1.5rem, 1.7vw, 2rem);
+  border: 0;
   height: 90px;
   background-repeat: no-repeat;
   font-family: "robotoblack";
