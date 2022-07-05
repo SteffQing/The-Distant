@@ -965,13 +965,24 @@ article aside #about-image {
   margin: 0 auto;
 }
 #token .token_utilities {
-  background: #000000;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+  background: black;
   width: 100%;
   margin: 5% auto;
-  padding: 15em;
+  padding: 20em;
+}
+@media (max-width: 417px) {
+  #token .token_utilities ::-webkit-scrollbar {
+    width: 0;
+  }
+  #token .token_utilities img {
+    position: absolute;
+    right: 7%;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 @media (min-width: 420px) {
   #token .token_utilities {
@@ -981,28 +992,56 @@ article aside #about-image {
     background-repeat: no-repeat;
     width: 100%;
     margin: 0% auto;
-    padding: 15em;
+    padding: 19em;
+  }
+  #token .token_utilities ::-webkit-scrollbar {
+    width: 0;
+  }
+  #token .token_utilities img {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    margin-bottom: 40px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 @media (min-width: 520px) {
   #token .token_utilities {
     padding: 18em;
+    background: black;
+  }
+  #token .token_utilities img {
+    position: absolute;
+    right: 22%;
+    top: 5px;
+    bottom: 0;
   }
 }
 @media (min-width: 720px) {
   #token .token_utilities {
-    background: #000000;
-    background-position: center center;
-    background-size: contain;
+    background: black;
     width: 100%;
     padding: 20em;
     margin: 0% auto;
+  }
+  #token .token_utilities img {
+    position: absolute;
+    right: 30%;
+    top: 0;
   }
 }
 @media (min-width: 1300px) {
   #token .token_utilities {
     width: 100%;
     padding: 25em;
+  }
+  #token .token_utilities img {
+    position: absolute;
+    right: 35%;
+    top: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 @media (min-width: 1640px) {

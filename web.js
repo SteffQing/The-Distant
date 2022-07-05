@@ -1,12 +1,10 @@
-
-
-// function scrollFunction() { 
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
-//     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo_img.png')"; 
-//   } else { 
-//     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo.png')"; 
-//   } 
-// }
+ function scrollFunction() { 
+   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) { 
+     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo_img.png')"; 
+   } else { 
+     document.getElementById("logo").style.backgroundImage = "url('./assets/images/logo.png')"; 
+   } 
+}
 
 
 function reveal() {
