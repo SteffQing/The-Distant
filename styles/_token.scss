@@ -3,7 +3,7 @@
   display: flex;
   margin: 0 auto;
   .token_utilities {
-    background-image: url(../assets/images/void-utility.png);
+    background:#000000;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     margin: 5% auto;
     padding: 15em;
     @media (min-width: 420px) {
-      background-image: url(../assets/images/void-token-vw.png);
+      background:black;
       background-position: center center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -23,7 +23,7 @@
       padding: 18em;
     }
     @media (min-width: $bp-tablet) {
-      background-image: url(../assets/images/void-token-vw.png);
+      background:#000000;
       background-position: center center;
       background-size: contain;
       width: 100%;

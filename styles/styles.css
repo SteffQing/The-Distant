@@ -75,7 +75,6 @@ body::-webkit-scrollbar-thumb:hover {
 @-webkit-keyframes preloader {
   100% {
     z-index: -300;
-    background: none;
     display: none;
   }
 }
@@ -83,7 +82,6 @@ body::-webkit-scrollbar-thumb:hover {
 @keyframes preloader {
   100% {
     z-index: -300;
-    background: none;
     display: none;
   }
 }
@@ -92,6 +90,7 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
   width: 90px;
   height: 90px;
+  overflow: visible;
 }
 
 .loader {
@@ -100,6 +99,10 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 35%;
   right: 50%;
+  overflow: visible;
+}
+.loader ::-webkit-scrollbar {
+  width: 0;
 }
 
 @-webkit-keyframes appear {
@@ -390,6 +393,7 @@ main header {
   height: -moz-fit-content;
   height: fit-content;
   max-width: 100%;
+  overflow: hidden;
   color: white;
   padding-top: 10%;
 }
@@ -411,8 +415,12 @@ main header {
   main header .hero .hero-content {
     max-width: 75%;
     position: relative;
+    overflow: visible;
     text-align: left;
     top: 25%;
+  }
+  main header .hero .hero-content ::-webkit-scrollbar {
+    width: 0;
   }
   main header .hero_image {
     width: 60%;
@@ -544,6 +552,10 @@ article aside #about-image {
 #products {
   width: 100%;
   background-color: black;
+  overflow: visible;
+}
+#products ::-webkit-scrollbar {
+  width: 0;
 }
 #products h2 {
   text-align: center;
@@ -558,6 +570,10 @@ article aside #about-image {
   grid-template-columns: 1fr;
   justify-items: stretch;
   margin: 0 5%;
+  overflow: visible;
+}
+#products .grid-content ::-webkit-scrollbar {
+  width: 0;
 }
 #products .grid-content .marketplace,
 #products .grid-content .lending,
@@ -949,7 +965,7 @@ article aside #about-image {
   margin: 0 auto;
 }
 #token .token_utilities {
-  background-image: url(../assets/images/void-utility.png);
+  background: #000000;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -959,7 +975,7 @@ article aside #about-image {
 }
 @media (min-width: 420px) {
   #token .token_utilities {
-    background-image: url(../assets/images/void-token-vw.png);
+    background: black;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -975,7 +991,7 @@ article aside #about-image {
 }
 @media (min-width: 720px) {
   #token .token_utilities {
-    background-image: url(../assets/images/void-token-vw.png);
+    background: #000000;
     background-position: center center;
     background-size: contain;
     width: 100%;
@@ -1013,6 +1029,9 @@ article aside #about-image {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+.roadmap-section *::-webkit-scrollbar {
+  width: 0;
 }
 .roadmap-section section h1 {
   font-family: "robotoblack_italic";

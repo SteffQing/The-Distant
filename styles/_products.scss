@@ -88,6 +88,10 @@
 #products {
   width: 100%;
   background-color: black;
+  overflow: visible;
+  ::-webkit-scrollbar{
+    width:0;
+  }
   h2 {
     text-align: center;
     font-size: $h1;
@@ -101,6 +105,10 @@
     grid-template-columns: 1fr;
     justify-items: stretch;
     margin: 0 5%;
+    overflow: visible;
+    ::-webkit-scrollbar{
+      width:0;
+    }
     // @media (min-width: $bp-tablet) {
     //   margin: 0 3%;
     // }

@@ -15,7 +15,6 @@
 @keyframes preloader {
   100% {
     z-index: -300;
-    background: none;
     display: none;
   }
 }
@@ -24,6 +23,7 @@
   border-radius: 50%;
   width: 90px;
   height: 90px;
+  overflow: visible;
 }
 
 .loader {
@@ -32,6 +32,10 @@
   position: absolute;
   top: 35%;
   right: 50%;
+  overflow: visible;
+  ::-webkit-scrollbar{
+    width:0;
+  }
 }
 
 @keyframes appear {
