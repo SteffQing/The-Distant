@@ -1328,6 +1328,7 @@ footer p {
   background-size: 100%;
   bottom: 60px;
   right: 30px;
+  z-index: 400;
   -webkit-transition: background 2s;
   transition: background 2s;
 }/*# sourceMappingURL=styles.css.map */
