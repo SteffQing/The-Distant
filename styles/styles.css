@@ -1328,8 +1328,8 @@ footer p {
   width: 3%;
   right: 10px;
   height: 60px;
-  border-top: 1px solid #000;
-  background: red;
+  border: 1px solid #000;
+  background: black;
   border-radius: 100%;
   z-index: 1;
   -webkit-transition: all 1s;
