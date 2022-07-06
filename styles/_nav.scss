@@ -11,12 +11,15 @@ nav{
 
 /*Styling logo*/
 .logo{
-  padding:1vh 1vw;
+  padding:1vh 3vw;
   text-align: center;
+  overflow-y: visible;
 }
 .logo img {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  transform: 
+  scale(1.5);
+  width: 10rem;
 }
 
 /*Styling Links*/
