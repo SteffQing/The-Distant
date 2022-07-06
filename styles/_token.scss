@@ -1,7 +1,38 @@
 #token {
   background-color: black;
-  display: flex;
   margin: 0 auto;
+  h1{
+    text-align: center;
+    color:white;
+    padding:30px;
+    font-size: 35px;
+  }
+  h3{
+    text-align: center;
+    color:white;
+    padding:10px 100px;
+    font-size: 25px;
+  }
+  img{
+    display: block;
+  }
+  @media (max-width:540px){
+    h1{
+      text-align: center;
+      color:white;
+      padding:30px;
+      font-size: 25px;
+    }
+    h3{
+      text-align: center;
+      color:white;
+      padding:10px 0px;
+      font-size: 15px;
+    }
+    img{
+      display: block;
+    }
+  }
   .token_utilities {
     position:relative;
     background:black;
