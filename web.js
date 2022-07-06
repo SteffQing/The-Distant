@@ -1,4 +1,8 @@
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
@@ -132,11 +136,15 @@ function launchpad() {
 
 window.addEventListener("scroll", launchpad);
 
-window.onscroll = function() {scrollFunction()};
- function scrollFunction() { 
-   if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) { 
-     document.getElementById("up").style.backgroundImage = "url('../assets/svg/uparrow.svg')";
-   } else { 
-     document.getElementById("up").style.backgroundImage = "none"; 
-   } 
- }
+myID = document.getElementById("myID");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 800) {
+    myID.className = "bottomMenu show"
+  } else {
+    myID.className = "bottomMenu hide"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);

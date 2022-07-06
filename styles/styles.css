@@ -6,6 +6,7 @@ html {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Kalam;
@@ -51,10 +52,6 @@ body::-webkit-scrollbar-thumb:hover {
   background-clip: content-box;
   background-color: #ffffff;
   width: 20px;
-}
-
-.website {
-  width: 100%;
 }
 
 .preloader {
@@ -470,12 +467,17 @@ main header .hero button {
   padding: 0.4em 2em;
   font-size: clamp(1.5rem, 1.7vw, 2rem);
   border: 0;
-  height: 90px;
+  height: 70px;
   background-repeat: no-repeat;
   font-family: "robotoblack";
   cursor: pointer;
   -webkit-animation: jump 4s ease-in 4 forwards;
           animation: jump 4s ease-in 4 forwards;
+}
+@media (max-width: 530px) {
+  main header .hero button {
+    height: 40px;
+  }
 }
 @-webkit-keyframes jump {
   10% {
@@ -1320,15 +1322,64 @@ footer p {
   padding: 1em;
 }
 
-.up {
+.bottomMenu {
   position: fixed;
-  background: url(../assets/svg/uparrow.svg);
-  height: 50px;
-  width: 50px;
+  bottom: 20px;
+  width: 3%;
+  right: 10px;
+  height: 60px;
+  border-top: 1px solid #000;
+  background: red;
+  border-radius: 100%;
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.hide {
+  opacity: 0;
+  right: -100%;
+}
+
+.show {
+  opacity: 1;
+  width: 60px;
+  background-image: url(../assets/svg/uparrow.svg);
+  right: 10px;
   background-size: 100%;
-  bottom: 60px;
-  right: 30px;
-  z-index: 400;
-  -webkit-transition: background 2s;
-  transition: background 2s;
+}
+@media (max-width: 540px) {
+  .show {
+    width: 40px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 40px;
+    background-color: black;
+  }
+}
+
+.show:hover {
+  -webkit-box-shadow: 2px 2px 3px gray;
+          box-shadow: 2px 2px 3px gray;
+  -webkit-animation: jump 4s ease-in 4 forwards;
+          animation: jump 4s ease-in 4 forwards;
+}
+
+@keyframes jump {
+  10% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  70% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  90% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }/*# sourceMappingURL=styles.css.map */

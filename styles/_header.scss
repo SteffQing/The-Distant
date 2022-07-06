@@ -65,7 +65,10 @@ main {
         padding: 0.4em 2em;
         font-size: $p2;
         border:0;
-        height:90px;
+        height:70px;
+        @media (max-width:530px) {
+          height:40px;
+        }
         background-repeat: no-repeat;
         font-family: "robotoblack";
         cursor: pointer;
