@@ -2,7 +2,7 @@ nav{
   height: 6rem;
   width: 100vw;
   background: rgba(112, 128, 144, 0.235);
-  
+  font-size: 3em;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
@@ -13,7 +13,6 @@ nav{
 .logo{
   padding:1vh 3vw;
   text-align: center;
-  overflow-y: visible;
 }
 .logo img {
   height: 4rem;

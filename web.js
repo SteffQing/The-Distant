@@ -1,4 +1,3 @@
-// alert('welcome to distant');
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -14,6 +13,19 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
+
+myID = document.getElementById("myID");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 800) {
+    myID.className = "bottomMenu show"
+  } else {
+    myID.className = "bottomMenu hide"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
