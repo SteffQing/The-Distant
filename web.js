@@ -137,6 +137,6 @@ window.onscroll = function() {scrollFunction()};
    if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) { 
      document.getElementById("up").style.backgroundImage = "url('../assets/svg/uparrow.svg')";
    } else { 
-     document.getElementById("up").style.backgroundImage = "url('../assets/svg/uparroerw.svg')"; 
+     document.getElementById("up").style.backgroundImage = "none"; 
    } 
  }
