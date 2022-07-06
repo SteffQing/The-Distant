@@ -9,6 +9,9 @@ html {
   box-sizing: border-box;
   font-family: Kalam;
 }
+*::-webkit-scrollbar{
+    width:0;
+  }
 
 // this is for the scrollbar, since the body of the website is mainly black, you'll need a white scrollbar!
 body {
