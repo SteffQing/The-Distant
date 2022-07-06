@@ -291,7 +291,7 @@ nav {
   height: 6rem;
   width: 100vw;
   background: rgba(112, 128, 144, 0.235);
-  font-size: 3em;
+  font-size: 2.5em;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
@@ -322,18 +322,18 @@ nav {
   list-style: none;
   width: 88vw;
   padding: 0 0.7vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .nav-links li a {
   text-decoration: none;
-  margin: 0 0.7vw;
+  margin: 0 3vw;
 }
 
 .nav-links li a:hover {

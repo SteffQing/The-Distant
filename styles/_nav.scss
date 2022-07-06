@@ -2,7 +2,7 @@ nav{
   height: 6rem;
   width: 100vw;
   background: rgba(112, 128, 144, 0.235);
-  font-size: 3em;
+  font-size: 2.5em;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
@@ -27,13 +27,13 @@ nav{
   list-style: none; 
   width: 88vw;
   padding: 0 0.7vw;
-  justify-content: space-evenly;
+  justify-content:flex-end;
   align-items: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .nav-links li a{
   text-decoration: none;
-  margin: 0 0.7vw;
+  margin: 0 3vw;
 }
 .nav-links li a:hover {
   color: #61DAFB;
